@@ -46,8 +46,8 @@ return (
             </div>
         </div>
 
-		<div className="backdrp"></div>
-        <SideBar/>
+		{/* <div className="backdrp"></div>
+        <SideBar/> */}
     </header>
 );
 }

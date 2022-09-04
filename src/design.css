@@ -1139,6 +1139,7 @@ padding: 64px 0;
 
 /* SideBar */
 .backdrp {
+    display: none;
     background: rgba(68, 68, 68, 0.4);
     width: 100%;
     height: 100%;
@@ -1153,7 +1154,7 @@ padding: 64px 0;
     top: 0;
     left: 0;
     z-index: 11;
-    display: flex;
+    display: none;
     align-items: flex-start;
     width: auto;
     max-width: 1223px;
@@ -1222,6 +1223,9 @@ padding: 64px 0;
 .sidebar-close:hover {
     transform: scale(0.9);
     opacity: var(--opacity-all);
+}
+.open-side {
+  display: flex;
 }
 
 /* Review */

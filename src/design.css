@@ -1228,6 +1228,47 @@ padding: 64px 0;
   display: flex;
 }
 
+/* Breadcrumbs */
+.navigate-breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.link-back, .link-share {
+    display: flex;
+}
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+}
+.breadcrumbs span, .breadcrumbs a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--secondary-text-color);
+    transition: .3s;
+}
+.breadcrumbs a.active { 
+    position: relative;
+    padding-right: 12px;
+    margin-right: 8px;
+}
+.breadcrumbs a.active::before { 
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--secondary-text-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.breadcrumbs a:hover {
+    opacity: .6;
+}
+
 /* Review */
 .review p, .review h3 {
   margin: 0

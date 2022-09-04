@@ -909,7 +909,14 @@ padding: 64px 0;
     border-color: var(--primary-color);
 }
 
-
+/* Typography */
+.h2-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #444444;
+    margin: 0;
+}
 /* Nav Top */
 .nav-top {
     position: relative;

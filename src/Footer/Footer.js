@@ -3,7 +3,7 @@ import React from "react";
 
 function Footer() {
 return (
-    <footer>
+    <footer className="ptb-64">
         <div className="container-fluid">
             <div className="row special-row">
                 <a href="#">LOGO</a>

@@ -2,9 +2,9 @@ import React from "react";
 
 
 
-function MainTitle({text}) {
+function MainTitle({text, className = null}) {
 return (
-    <h2 className="h2-title">
+    <h2 className={`h2-title ${className}`}>
         {text}
     </h2>
 );

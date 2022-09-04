@@ -46,7 +46,7 @@ return (
             </div>
         </div>
 
-		<div className={`backdrp ${isOpenSideBar ? 'open-side' : ''}`} onClick={() => setIsOpenSideBar(false)}></div>
+		<div className={`backdrp ${isOpenSideBar ? 'show' : ''}`} onClick={() => setIsOpenSideBar(false)}></div>
         <SideBar isOpenSideBar={isOpenSideBar} setIsOpenSideBar={setIsOpenSideBar}/>
     </header>
 );

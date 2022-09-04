@@ -2,10 +2,10 @@ import React from "react";
 
 
 
-function MainTitle() {
+function MainTitle({text}) {
 return (
     <h2 className="h2-title">
-        Хиты продаж
+        {text}
     </h2>
 );
 }

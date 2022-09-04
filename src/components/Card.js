@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-function Card({backgroundImage, percent = null, name, type, price, priceWithoutPercent = null}) {
+function Card({backgroundImage, name, type, price, priceWithoutPercent = null, percent = null}) {
 return (
     <div className="card">
         <div className="image-card">
@@ -11,7 +11,7 @@ return (
                 <div className="sale-info">
 
                     {/* Если нету скидки то тогда просто целый див не показывать то что снизу */}
-                    {percent ? <div className="sale l-hot">-25%</div> : null}
+                    {percent ? <div className="sale l-hot">{percent}</div> : null}
 
                 </div>
                 <div className="favorite">

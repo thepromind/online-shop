@@ -1228,47 +1228,6 @@ padding: 64px 0;
   display: flex;
 }
 
-/* Breadcrumbs */
-.navigate-breadcrumbs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.link-back, .link-share {
-    display: flex;
-}
-.breadcrumbs {
-    display: flex;
-    align-items: center;
-}
-.breadcrumbs span, .breadcrumbs a {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: var(--secondary-text-color);
-    transition: .3s;
-}
-.breadcrumbs a.active { 
-    position: relative;
-    padding-right: 12px;
-    margin-right: 8px;
-}
-.breadcrumbs a.active::before { 
-    content: '';
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: var(--secondary-text-color);
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-.breadcrumbs a:hover {
-    opacity: .6;
-}
-
 /* Review */
 .review p, .review h3 {
   margin: 0
@@ -1276,26 +1235,56 @@ padding: 64px 0;
 .review {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 40px 20px;
   gap: 24px;
   background: #F6F7F8;
   border-radius: 16px;
+  color: #444444
 }
 .review .review-block {
   display: flex;
   justify-content: space-between;
+  gap: 6px;
 }
 .review .review-block .review-info {
   display: flex;
+  align-items: center;
+  gap: 16px;
 }
 .review .review-block .review-info .review-image {
   font-weight: 510;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px; 
+  min-width: 40px;
+  min-height: 40px; 
   background: rgba(193, 200, 206, 0.3);
   border-radius: 100%;
+}
+.review .review-block .review-name {
+  font-weight: 590;
+  font-size: 20px;
+}
+.review .review-block .review-date {
+  display: flex;
+  align-items: end;
+  min-width: 114px;
+}
+
+/* YouSearch */
+.yousearch {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 446px;
+  color: #444444;
+  align-items: flex-start
+}
+.yousearch .yousearch-item {
+  display: flex;
+  padding: 6px 12px;
+  align-items: center;
+  justify-content: center;
+  height: 31px;
+  background: #F6F7F8;
+  border-radius: 8px;
 }

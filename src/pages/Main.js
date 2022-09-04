@@ -2,6 +2,7 @@ import React from "react";
 import Banner from '../components/Banner';
 import Card from '../components/Card'
 import Review from '../components/Review';
+import YouSearch from '../components/YouSearch';
 import Footer from '../Footer/Footer';
 import MainTitle from '../Typography/MainTitle';
 
@@ -129,8 +130,6 @@ return (
             </div>
 
             <Footer/>
-
-            <Review/>
         </div>
     </main>
 );

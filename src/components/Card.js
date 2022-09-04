@@ -2,16 +2,16 @@ import React from "react";
 
 
 
-function Card() {
+function Card({backgroundImage, percent = null, name, type, price, priceWithoutPercent = null}) {
 return (
     <div className="card">
                         <div className="image-card">
-                            <div className="img" style={{ backgroundImage: "url(../images/products/product-1.png" }}></div>
+                            <div className="img" style={{ backgroundImage: `${backgroundImage}` }}></div>
                             <div className="actions">
                                 <div className="sale-info">
 
                                     {/* Если нету скидки то тогда просто целый див не показывать то что снизу */}
-                                    <div className="sale l-hot">-25%</div>
+                                    {percent ? <div className="sale l-hot">-25%</div> : null}
 
                                 </div>
                                 <div className="favorite">
@@ -23,12 +23,18 @@ return (
                         </div>
                         <div className="text-card">
                             <div className="info">
-                                <h3>Dates Box</h3>
-                                <p>Футболки</p>
+                                <h3>{name}</h3>
+                                <p>{type}</p>
                             </div>
                             <div className="price">
-                                <span className="primary-price">6 790 ₸</span>
-                                <span className="sale-price">4 490 ₸</span>
+                                {
+                                    priceWithoutPercent
+                                        ? <>
+                                            <span className="primary-price">{priceWithoutPercent} ₸</span>
+                                            <span className="sale-price">{price} ₸</span>
+                                        </>
+                                        : <span className='primary-price'>{price} ₸</span>
+                                }
                             </div>
                         </div>
                     </div>

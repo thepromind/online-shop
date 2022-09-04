@@ -1229,7 +1229,7 @@ padding: 64px 0;
 }
 
 /* Review */
-.review p {
+.review p, .review h3 {
   margin: 0
 }
 .review {
@@ -1247,8 +1247,14 @@ padding: 64px 0;
 }
 .review .review-block .review-info {
   display: flex;
-    right: -44px;
-    top: 12px;
-    color: white;
-    transition: .3s;
+}
+.review .review-block .review-info .review-image {
+  font-weight: 510;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px; 
+  background: rgba(193, 200, 206, 0.3);
+  border-radius: 100%;
 }

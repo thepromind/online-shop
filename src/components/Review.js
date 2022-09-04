@@ -1,23 +1,21 @@
-import MainTitle from '../Typography/MainTitle'
-
 
 const Review = () => {
 	return (
 		<div className='review'>
 			<div className='review-block'>
 				<div className='review-info'>
-					<div>
-						<p>
+					<div className='review-image'>
+						<span>
 							М
-						</p>
+						</span>
 					</div>
 					<div>
-						<p className='review-name'>
+						<h3 className='review-name'>
 							Мариям
-						</p>
-						<p className='review-text'>
+						</h3>
+						<span className='review-text'>
 							Хорошее качество. Спасибо.
-						</p>
+						</span>
 					</div>
 				</div>
 				<div className='review-date'>

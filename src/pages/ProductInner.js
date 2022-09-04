@@ -5,7 +5,7 @@ function ProductInner() {
 return (
     <main>
         <div className="container-fluid">
-            <Banner/>
+            
         </div>
     </main>
 );

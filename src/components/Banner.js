@@ -4,12 +4,9 @@ import React from "react";
 
 function Banner() {
 return (
-    <button className="btn btn-primary">
-        <svg height="24" width="24">
-            <use href="/icons/sr-bulletlist.svg#root"></use>
-        </svg>
-        Каталог
-    </button>
+    <div className="banner w-100-400">
+        <div className="banner-img" style={{ backgroundImage: "url(../images/banners/banner-2.png)"}}></div>
+    </div>
 );
 }
 

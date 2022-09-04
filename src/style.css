@@ -1,3 +1,11 @@
+
+.header {
+    padding: 10px 0;
+}
 .special-row {
-    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.logotype {
+    color: var(--primary-text-color);
+    margin-right: 16px;
 }

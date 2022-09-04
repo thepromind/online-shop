@@ -4,12 +4,12 @@ import React from "react";
 
 function LinkMenu() {
 return (
-    <button className="btn btn-primary">
+    <div className="link-menu">
         <svg height="24" width="24">
-            <use href="/icons/sr-bulletlist.svg#root"></use>
+            <use href="/icons/sr-user.svg#root"></use>
         </svg>
-        Каталог
-    </button>
+        <span className="link-text">Войти</span>
+    </div>
 );
 }
 

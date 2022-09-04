@@ -2,11 +2,13 @@
 :root {
     --primary-color: #40BFFF;
     --white-color: #ffffff;
+    --orange-color: #E75F2A;
+    --yellow-color: #EFAA3F;
 
     --primary-text-color: #444444;
     --secondary-text-color: #9098B1;
 
-    --padding-sides: 15px;
+    --padding-sides: 30px;
 
     --position-center: center;
 
@@ -17,6 +19,15 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+select {
+    border: none;
+    appearance: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -31,6 +42,10 @@
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+}
+.container-fluid {
+  padding-right: var(--padding-sides);
+  padding-left: var(--padding-sides);
 }
 
 @media (min-width: 576px) {
@@ -75,4 +90,180 @@
     padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-top: var(--bs-gutter-y);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    grid-gap: 8px;
+    font-weight: 510;
+    height: 56px;
+    line-height: 20px;
+    color: var(--primary-text-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-52 {
+    height: 52px;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+/* Nav Top */
+nav {
+
+}
+
+/* Sale color */
+.l-hot { background-color: var(--yellow-color); }
+.m-hot { background-color: var(--orange-color); }
+.h-hot {  }
+/* Card */
+.card {
+    display: grid;
+    background-color: transparent;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+.card:hover {
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
+}
+.image-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .3s;
+}
+.card:hover .image-card {
+    border-radius: 12px 12px 0px 0px;
+}
+.image-card::before {
+    content: "";
+    display: block;
+    padding-top: 90%;
+}
+.image-card .img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.image-card .actions {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 16px;
+}
+.image-card .actions .sale {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 8px 4px;
+    border-radius: 4px;
+    position: relative;
+    clip-path: polygon(50% 5%, 100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
+}
+.image-card .actions .sale::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.image-card .actions .favorite {
+    margin-right: 16px;
+    opacity: 0;
+    transition: .3s;
+}
+.card:hover .image-card .actions .favorite {
+    opacity: 1;
+}
+.text-card {
+    padding: 16px;
+}
+.text-card .info {
+    display: grid;
+    grid-gap: 8px;
+    margin-bottom: 16px;
+}
+.text-card .info h3 {
+    font-weight: 590;
+    font-size: 18px;
+    line-height: 18px;
+    color: #444444;
+    margin: 0;
+}
+.text-card .info p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #9098B1;
+    margin: 0;
+}
+.text-card .price {
+    display: flex;
+    align-items: flex-end;
+    grid-gap: 8px;
+}
+.text-card .price .primary-price {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #444444;
+}
+.text-card .price .sale-price {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration-line: line-through;
+    color: #9098B1;
+}
+
+.link-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    grid-gap: 8px;
+}
+.link-menu .lint-text {
+    font-weight: 510;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
 }

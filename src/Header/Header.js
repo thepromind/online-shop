@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import './header.css';
 import Button from '../components/Button';
 import LinkMenu from '../components/LinkMenu';
+import SideBar from '../components/SideBar';
 
 
 function Header() {
+
+    const [isOpenSideBar, setIsOpenSideBar] = useState(false);
+
 return (
     <header>
         <div className="container-fluid">
@@ -15,6 +19,7 @@ return (
                         text={'Каталог'}
                         className={'btn btn-primary'}
                         icon={'/icons/sr-bulletlist.svg#root'}
+                        event={() => setIsOpenSideBar(true)}
                     />
                     <Button
                         text={'Каталог'}
@@ -37,9 +42,15 @@ return (
                         icon={'/icons/sr-hearth.svg#root'}
                         text={'Избранное'}
                     />
+
+                    
                 </div>
             </div>
         </div>
+        <SideBar 
+            isOpenSideBar={isOpenSideBar}
+            setIsOpenSideBar={setIsOpenSideBar}
+        />
     </header>
 );
 }

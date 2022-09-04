@@ -267,3 +267,42 @@ nav {
     line-height: 20px;
     color: #444444;
 }
+
+.sideBar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(68, 68, 68, 0.4);
+}
+.hide {
+    display: none;
+}
+.sideBar .sideBar_main {
+    background: white;
+    width: 320px;
+    padding: 30px 35px;
+    position: relative;
+}
+.sideBar .sideBar_main .sideBar_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer
+}
+.sideBar .sideBar_main .sideBar_block div {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+}
+.sideBar .sideBar_main .sideBar_block div p {
+    font-size: 12px;
+}
+.inner_sideBar {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-function Button({text, className = null, icon = null}) {
+function Button({text, className = null, icon = null, event = null}) {
 
     const renderSVG = (icon) => {
         if(icon) {
@@ -17,7 +17,7 @@ function Button({text, className = null, icon = null}) {
     }
     
     return (
-        <button className={`${className}`}>
+        <button onClick={event} className={`${className}`}>
             {renderSVG(icon)}
             {text}
         </button>

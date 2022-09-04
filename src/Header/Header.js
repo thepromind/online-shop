@@ -45,10 +45,9 @@ return (
                 </div>
             </div>
         </div>
-        <SideBar 
-            isOpenSideBar={isOpenSideBar}
-            setIsOpenSideBar={setIsOpenSideBar}
-        />
+
+		<div className="backdrp"></div>
+        <SideBar/>
     </header>
 );
 }

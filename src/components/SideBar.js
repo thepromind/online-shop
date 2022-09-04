@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 
 
-function SideBar() {
+function SideBar({isOpenSideBar, setIsOpenSideBar}) {
+
+useEffect(() => {
+	document.addEventListener('keydown', (event) => {
+			if (event.code === "Escape" && isOpenSideBar) {
+					setIsOpenSideBar(false)
+			}
+	})
+})
+
 return (
-    <div className="sidebar">
+    <div className={`sidebar ${isOpenSideBar ? 'open-side' : ''}`}>
         <div className="sidebar-inner">
 			<ul className="level-one-list">
 				<li>
@@ -146,7 +155,7 @@ return (
 			</div>
 
 		</div>
-		<button className="sidebar-close">
+		<button className="sidebar-close" onClick={() => setIsOpenSideBar(false)}>
 			<svg height="32" width="32" className="svg-link">
 				<use href='/icons/sr-close.svg#root'></use>
 			</svg>

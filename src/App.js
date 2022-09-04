@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Header from './Header/Header';
+import Footer from './Footer/Footer';
 import Nav from './components/Nav';
 import Main from './pages/Main';
 import ProductInner from './pages/ProductInner';
@@ -13,6 +14,7 @@ function App() {
       <Header/>
       {/* <Main/> */}
       <ProductInner/>
+      <Footer/>
     </div>
   );
 }

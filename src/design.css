@@ -1214,8 +1214,10 @@ padding: 64px 0;
 .sidebar-close {
     padding: 0;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -44px;
+    top: 12px;
+    color: white;
+    transition: .3s;
 }
 .sidebar-close:hover {
     transform: scale(0.9);

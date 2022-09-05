@@ -69,7 +69,7 @@ return (
                                 <Title15 className="mb-8" text={'Дополнительная информация'}/>
                                 <TitleBetweenText className="mb-16" title={'Состав'} text={'натуральная кожа'}/>
                                 <TitleBetweenText className="mb-16" title={'Состав'} text={'натуральная кожа'}/>
-                                <TitleBetweenText className="" title={'Состав'} text={'натуральная кожа'}/>
+                                <TitleBetweenText className="mb-16" title={'Состав'} text={'натуральная кожа'}/>
                             </div>
                             <div className="col-md-4">
                                 <Title15 className="mb-8" text={'Описание'}/>

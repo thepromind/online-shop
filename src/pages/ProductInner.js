@@ -6,6 +6,7 @@ import CardPrice from '../components/CardPrice';
 import MainTitle from '../Typography/MainTitle';
 import Title15 from '../Typography/Title15';
 import TitleBetweenText from '../Typography/TitleBetweenText';
+import StarVotes from '../components/StarVotes';
 
 
 function ProductInner() {
@@ -39,7 +40,8 @@ return (
                     </div>
 
                     <div className="rates-review d-flex-al-center-space-between">
-                        <div className="rates-review-left">
+                        <div className="rates-review-left d-flex-align-center">
+                            <StarVotes rating={5}/>
                             <span className="review-count">142 отзыва</span>
                         </div>
                         <div className="rates-review-right">

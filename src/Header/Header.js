@@ -16,7 +16,7 @@ return (
         <div className="container-fluid">
             <div className="row special-row">
                 <div className="col-md-3">
-                    <a href="#" className="logotype">LOGO</a>
+                    <a href="#" className="logotype mr-16">LOGO</a>
                     <Button 
                         text={'Каталог'}
                         className={'btn btn-primary'}

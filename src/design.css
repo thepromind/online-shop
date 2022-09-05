@@ -1032,7 +1032,7 @@ select {
 .sidebar .sidebar-next .sidebar-next-inner {
     width: 50%;
 }
-.sidebar .sidebar-inner ul li .sidebar-link, .sidebar .sidebar-next-inner ul li .sidebar-link {
+.sidebar .sidebar-inner ul li .sidebar-link, .sidebar .sidebar-next-inner ul li .sidebar-link, footer .logo-container span, footer ul li, footer .footer-bottom {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -1132,6 +1132,10 @@ select {
     line-height: 20px;
     color: var(--secondary-text-color);
 }
+.rates-review-left {
+  grid-gap: 20px;
+}
+
 /* Show Images */
 .image-show {
     display: flex;
@@ -1279,7 +1283,19 @@ select {
   border-radius: 8px;
 }
 
-
+/* Footer */
+footer .logotype {
+  font-weight: 700;
+  font-size: 42px;
+  color: #000000;
+}
+footer .logo-container {
+  flex-direction: column;
+}
+footer .logo-container span, footer ul li {
+  padding: 0;
+  margin: 0 0 8px;
+}
 
 /* ------------------------ Всегда ниже всех стилей ------------------------ */
 

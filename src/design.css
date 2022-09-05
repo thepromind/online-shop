@@ -1300,6 +1300,56 @@ footer .logo-container span, footer ul li {
   margin: 0 0 8px;
 }
 
+/* advantage */
+.advantage {
+  position: relative;
+  z-index: 0;
+}
+.advantage::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  background: #f6f7f8;
+  top: 0;
+  left: -130px;
+  width: 150%;
+  height: 100%;
+}
+.advantage .advantage-inner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 26px;
+}
+.advantage .advantage-inner .advantage-card {
+  background: white;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 32px
+}
+.advantage .advantage-inner .advantage-card:nth-child(1) {
+  color: white;
+  background: #1A51CD;
+}
+.advantage .advantage-inner .advantage-card:nth-child(2) {
+  color: white;
+  background: rgb(135, 241, 135);
+}
+.advantage .advantage-inner .advantage-card:nth-child(3) {
+  color: black;
+  background: white;
+}
+.advantage .advantage-inner .advantage-card:nth-child(4) {
+  color: black;
+  background: linear-gradient(315deg, #F1AC41 0%, #FDDB7B 100%);
+}
+.advantage .advantage-inner .advantage-card h4 {
+  font-size: 20px;
+  font-weight: 590;
+}
+.advantage .advantage-inner .advantage-card span {
+  
+}
+
 /* ------------------------ Всегда ниже всех стилей ------------------------ */
 
 /* Margin top and bottom */
@@ -1442,6 +1492,9 @@ footer .logo-container span, footer ul li {
     }
     .mb-32 {
     margin-bottom: 32px;
+    }
+    .mb-40 {
+      margin-bottom: 40px;
     }
     .mb-64 {
     margin-bottom: 64px;

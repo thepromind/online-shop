@@ -52,7 +52,46 @@ return (
                 />
             </div>
 
-            <MainTitle text="Наши преимущества"/>
+            <div className='advantage ptb-64'>
+                <MainTitle className='mb-40' text="Наши преимущества"/>
+                <div className='advantage-inner'>
+                    <div className="advantage-card">
+                        <svg height="20" width="20">
+                            <use href='/icons/sr-placemarker-20.svg#root'></use>
+                        </svg>
+                        <h4 className='mtb-8'>Доставка день-в-день</h4>
+                        <span>в 18 городах</span>
+                    </div>
+                    <div className="advantage-card">
+                        <svg height="20" width="20">
+                            <use href='/icons/sr-placemarker-20.svg#root'></use>
+                        </svg>
+                        <h4 className='mtb-8'>App</h4>
+                        <span>Проект команды Logo App https://logo.app</span>
+                    </div>
+                    <div className="advantage-card">
+                        <svg height="20" width="20">
+                            <use href='/icons/sr-placemarker-20.svg#root'></use>
+                        </svg>
+                        <h4 className='mtb-8'>Продукция</h4>
+                        <span>Мы продаем продукцию только с пользой и со смыслом</span>
+                    </div>
+                    <div className="advantage-card">
+                        <svg height="20" width="20">
+                            <use href='/icons/sr-placemarker-20.svg#root'></use>
+                        </svg>
+                        <h4 className='mtb-8'>Садака</h4>
+                        <span>С каждой продажи мы перечисляем на боаготворительность</span>
+                    </div>
+                    <div className="advantage-card">
+                        <svg height="20" width="20">
+                            <use href='/icons/sr-placemarker-20.svg#root'></use>
+                        </svg>
+                        <h4 className='mtb-8'>Logo-App</h4>
+                        <span>Покупки онлайн и все такое</span>
+                    </div>
+                </div>
+            </div>
 
             <div style={{display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gridTemplateRows: '1fr 1fr', gridGap: '25px'}}>
                 <Card 
@@ -128,8 +167,6 @@ return (
                     priceWithoutPercent={'4 490'}
                 />
             </div>
-
-            <Footer/>
         </div>
     </main>
 );

@@ -752,6 +752,12 @@ select {
     color: var(--primary-text-color);
 }
 
+.main-inner-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #444444;
+}
 /* Sale color */
 .l-hot { background-color: var(--yellow-color); }
 .m-hot { background-color: var(--orange-color); }

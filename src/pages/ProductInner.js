@@ -39,9 +39,16 @@ return (
                         </div>
                     </div>
 
+                    <div className="main-title">
+                        <h1 className="main-inner-title">
+                            <span>Сандалии для девочки, в садик, ортопедические, натуральная кожа, на платформе, летний подарок</span>
+                        </h1>
+
+                    </div>
+                    
                     <div className="rates-review d-flex-al-center-space-between">
                         <div className="rates-review-left d-flex-align-center">
-                            <StarVotes rating={5}/>
+                            <StarVotes rating={3}/>
                             <span className="review-count">142 отзыва</span>
                         </div>
                         <div className="rates-review-right">

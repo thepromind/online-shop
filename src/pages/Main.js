@@ -1,7 +1,9 @@
 import React from "react";
+import Accordion from '../components/Accordion';
 import Banner from '../components/Banner';
 import Card from '../components/Card'
 import Review from '../components/Review';
+import SideCats from '../components/SideCats';
 import YouSearch from '../components/YouSearch';
 import Footer from '../Footer/Footer';
 import MainTitle from '../Typography/MainTitle';
@@ -10,6 +12,7 @@ function Main() {
 return (
     <main>
         <div className="container-fluid">
+            <Accordion/>
             <Banner/>
 
             <MainTitle text={'Хиты продаж'}/>

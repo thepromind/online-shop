@@ -1044,7 +1044,7 @@ select {
 .sidebar .sidebar-next .sidebar-next-inner {
     width: 50%;
 }
-.sidebar .sidebar-inner ul li .sidebar-link, .sidebar .sidebar-next-inner ul li .sidebar-link, footer .logo-container span, footer ul li, footer .footer-bottom {
+.sidebar .sidebar-inner ul li .sidebar-link, .sidebar .sidebar-next-inner ul li .sidebar-link, footer .logo-container span, footer ul li, footer .footer-bottom, .sideCats ul li {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -1056,7 +1056,7 @@ select {
     border-radius: 8px;
     transition: .3s;
 }
-.sidebar .sidebar-inner ul li .sidebar-link:hover, .sidebar .sidebar-next-inner ul li .sidebar-link:hover {
+.sidebar .sidebar-inner ul li .sidebar-link:hover, .sidebar .sidebar-next-inner ul li .sidebar-link:hover, .sideCats ul li:hover {
     background-color: #F3F5F9;
 }
 .sidebar .sidebar-inner ul li .sidebar-link .text-link, .sidebar .sidebar-next-inner ul li .sidebar-link .text-link {
@@ -1386,6 +1386,33 @@ footer .logo-container span, footer ul li {
 
 .modal .modal-window .modal-content .black {
   color: black
+}
+
+/* CardCategory */
+.card .image-card .img {
+  display: flex;
+  align-items: end;
+  padding: 8px;
+}
+.card .image-card .img .card-category-text {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  height: 46px;
+}
+
+/* SideCats */
+.sideCats ul li a {
+  color: var(--primary-text-color)
+}
+
+/* Accordion */
+.accordion__item:not(.accordion__item_show) .accordion__body {
+  display: none;
 }
 
 /* ------------------------ Всегда ниже всех стилей ------------------------ */

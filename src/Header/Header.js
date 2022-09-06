@@ -4,11 +4,14 @@ import Button from '../components/Button';
 import LinkMenu from '../components/LinkMenu';
 import Search from "../components/Search";
 import SideBar from '../components/SideBar';
+import Modalauthorization from '../components/Modalauthorization';
 
 
 function Header() {
 
 const [isOpenSideBar, setIsOpenSideBar] = useState(false);
+const [isOpenModalAutorization, setIsOpenModalAutorization] = useState(false)
+const [isSendMail, setIsSendMail] = useState(false)
 
 
 return (
@@ -30,6 +33,7 @@ return (
                 <div className="col-md-3">
                     <div className="d-flex-align-center gg-16">
                         <LinkMenu
+                            event={() => setIsOpenModalAutorization(true)}
                             icon={'/icons/sr-user.svg#root'}
                             text={'Войти'}
                         />
@@ -48,6 +52,8 @@ return (
 
 		<div className={`backdrp ${isOpenSideBar ? 'show' : ''}`} onClick={() => setIsOpenSideBar(false)}></div>
         <SideBar isOpenSideBar={isOpenSideBar} setIsOpenSideBar={setIsOpenSideBar}/>
+
+        <Modalauthorization isOpenModalAutorization={isOpenModalAutorization} setIsOpenModalAutorization={setIsOpenModalAutorization} isSendMail={isSendMail} setIsSendMail={setIsSendMail} />
     </header>
 );
 }

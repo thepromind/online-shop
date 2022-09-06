@@ -5,12 +5,14 @@ import React, { useEffect } from "react";
 function SideBar({isOpenSideBar, setIsOpenSideBar}) {
 
 useEffect(() => {
-	document.addEventListener('keydown', (event) => {
-			if (event.code === "Escape" && isOpenSideBar) {
-					setIsOpenSideBar(false)
-			}
-	})
-})
+	if(isOpenSideBar) {
+		document.addEventListener('keydown', (event) => {
+				if (event.code === "Escape" && isOpenSideBar) {
+						setIsOpenSideBar(false)
+				}
+		})
+	}
+}, [isOpenSideBar])
 
 return (
     <div className={`sidebar ${isOpenSideBar ? 'open-side' : ''}`}>

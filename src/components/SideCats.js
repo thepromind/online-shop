@@ -12,7 +12,7 @@ const SideCats = () => {
 		'Разное',
 	]
 	return (
-		<div className='sideCats p-4'>
+		<div className='sideCats'>
 			<ul>
 				{categoryArr.map((type, i) => {
 					return <li key={i}><a href='#'>{type}</a></li>

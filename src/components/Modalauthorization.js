@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import MainTitle from '../Typography/MainTitle';
 import Title15 from '../Typography/Title15';
+import SubTitle from '../Typography/SubTitle';
 import Button from './Button';
 import Input from './Input';
 
@@ -42,17 +43,16 @@ const Modalauthorization = ({isOpenModalAutorization, setIsOpenModalAutorization
 			return <>
 				<MainTitle text={'LOGO'} className={"modal-logo black mb-32"}/>
 				<MainTitle text={'Проверьте почту'} className={'black mb-8'}/>
-				<Title15 text={'Мы отправили код на ваш почтовый адрес. Пожалуйста подтвердите ваш электронный адрес.'} className={'black mb-16'}/>
+				<SubTitle text={'Мы отправили код на ваш почтовый адрес. Пожалуйста подтвердите ваш электронный адрес.'} className={'mb-16'}/>
 				<Button text={'Понятно'} className={'btn btn-primary w-100'} event={()=>endAutorization()} />
 			</>
 		} else {
 			return <>
 				<MainTitle text={'LOGO'} className={"modal-logo black mb-32"}/>
 				<MainTitle text={'Войдите по почте'} className={'black mb-8'}/>
-				<Title15 text={'Мы отправим код на ваш почтовый адрес.'} className={'black mb-16'}/>
-				<Title15 text={'Почта'} className={'black'}/>
+				<SubTitle text={'Мы отправим код на ваш почтовый адрес.'} className={'mb-16'}/>
 				<form onSubmit={(e) => onSubmit(e)}>
-					<Input text={'hello@example.com'} className={'w-100 mb-32'}/>
+					<Input label={"Почта"} nameID={"email"} text={'hello@example.com'} className={'w-100 mb-32'}/>
 					<Button text={'Получить код'} className={'btn btn-primary w-100'}/>
 				</form>
 			</>

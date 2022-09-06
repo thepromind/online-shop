@@ -1,15 +1,13 @@
 import React from "react";
 import Breadcrumbs from '../components/Breadcrumbs';
-import ImageShow from '../components/ImageShow';
 import Card from '../components/Card';
-import CardPrice from '../components/CardPrice';
 import MainTitle from '../Typography/MainTitle';
 import Title15 from '../Typography/Title15';
-import TitleBetweenText from '../Typography/TitleBetweenText';
-import StarVotes from '../components/StarVotes';
+import CardCategory from '../components/CardCategory';
+import SideCats from '../components/SideCats';
 
 
-function ProductInner() {
+function CatsInner() {
 return (
     <div className="wrapper">
         <div className="container-fluid">
@@ -28,7 +26,7 @@ return (
                             </span>
                             <Breadcrumbs/>
                         </div>
-                        <div className="navigate-right">
+                        {/* <div className="navigate-right">
                             <span className="link-share">
                                 
                                 <svg height="24" width="24">
@@ -36,63 +34,38 @@ return (
                                 </svg>
                                 
                             </span>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="main-title mb-16">
                         <h1 className="main-inner-title">
-                            <span>Сандалии для девочки, в садик, ортопедические, натуральная кожа, на платформе, летний подарок</span>
+                            <span>Мужчинам</span>
                         </h1>
 
                     </div>
                     
-                    <div className="rates-review d-flex-al-center-space-between">
-                        <div className="rates-review-left d-flex-align-center">
-                            <StarVotes rating={3}/>
-                            <span className="review-count">142 отзыва</span>
-                        </div>
-                        <div className="rates-review-right">
-                            <span className="product-num">Код товара: 633900598</span>
-                        </div>
+                   
+                </div>
+
+                <div className="col-md-2">
+                    <Title15 className="mb-12" text={'Категории'}/>
+                    <SideCats/>
+                </div>
+                <div className="col-md-10">
+                    <div className="grid-max mb-40">
+                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
+                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
+                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
+                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
+                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
+                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
+                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
+                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
+                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
+                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
                     </div>
-                </div>
-
-                <div className="col-md-5">
-                    <ImageShow/>
-                </div>
-                <div className="col-md-4">
-                    <TitleBetweenText className="mb-16" title={'Состав'} text={'натуральная кожа'}/>
-                    <TitleBetweenText className="mb-16" title={'Цвет'} text={'белый'}/>
-                    <TitleBetweenText className="mb-16" title={'Гарантийный срок'} text={'2года'}/>
-                    <a href="#" className="link-dash">Таблица размеров</a>
-                </div>
-                <div className="col-md-3">
-                    <CardPrice/>
-                </div>
-
-                <div className="col-md-12 mt-64">
-                    <div className="card-description">
-                        <MainTitle className="mb-16" text={'О товаре'}/>
-                        <div className="row">
-                            <div className="col-md-5">
-                                <Title15 className="mb-8" text={'Дополнительная информация'}/>
-                                <TitleBetweenText className="mb-16" title={'Состав'} text={'натуральная кожа'}/>
-                                <TitleBetweenText className="mb-16" title={'Состав'} text={'натуральная кожа'}/>
-                                <TitleBetweenText className="mb-16" title={'Состав'} text={'натуральная кожа'}/>
-                            </div>
-                            <div className="col-md-4">
-                                <Title15 className="mb-8" text={'Описание'}/>
-                            </div>
-                            <div className="col-md-3">
-                                <Title15 className="mb-8" text={'О продавце'}/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="col-md-12 mt-64">
-                    <MainTitle className="mb-16" text={'Похожие товары'}/>
-                    <div style={{display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gridGap: '25px'}}>
+                    <MainTitle className="mb-16" text={'Одежда'}/>
+                    <div className="grid-max">
                         <Card 
                             backgroundImage={'url(../images/products/product-1.png'}
                             name={'Dates Box'}
@@ -100,12 +73,6 @@ return (
                             price={'6 790'}
                             percent={'25%'}
                             priceWithoutPercent={'4 490'}
-                        />
-                        <Card 
-                            backgroundImage={'url(../images/products/product-1.png'}
-                            name={'Dates Box'}
-                            type={'Футболки'}
-                            price={'6 790'}
                         />
                         <Card 
                             backgroundImage={'url(../images/products/product-1.png'}
@@ -120,6 +87,16 @@ return (
                             name={'Dates Box'}
                             type={'Футболки'}
                             price={'6 790'}
+                            percent={'25%'}
+                            priceWithoutPercent={'4 490'}
+                        />
+                        <Card 
+                            backgroundImage={'url(../images/products/product-1.png'}
+                            name={'Dates Box'}
+                            type={'Футболки'}
+                            price={'6 790'}
+                            percent={'25%'}
+                            priceWithoutPercent={'4 490'}
                         />
                         <Card 
                             backgroundImage={'url(../images/products/product-1.png'}
@@ -131,6 +108,7 @@ return (
                         />
                     </div>
                 </div>
+
 
             </div>
 
@@ -140,4 +118,4 @@ return (
 );
 }
 
-export default ProductInner;
+export default CatsInner;

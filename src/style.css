@@ -8,3 +8,47 @@
 .logotype {
     color: var(--primary-text-color);
 }
+
+/* advantage */
+.advantage {
+    position: relative;
+    background: #f6f7f8;
+    z-index: 0;
+}
+.advantage .advantage-inner {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 24px;
+}
+.advantage .advantage-inner .advantage-card {
+    background: white;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 48px 32px;
+}
+  .advantage .advantage-inner .advantage-card:nth-child(1) {
+    color: white;
+    background: var(--primary-color);
+  }
+  .advantage .advantage-inner .advantage-card:nth-child(2) {
+    color: white;
+    background-color: rgb(135, 241, 135);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .advantage .advantage-inner .advantage-card:nth-child(3) {
+    color: black;
+    background: white;
+  }
+  .advantage .advantage-inner .advantage-card:nth-child(4) {
+    color: black;
+    background: linear-gradient(315deg, #F1AC41 0%, #FDDB7B 100%);
+  }
+  .advantage .advantage-inner .advantage-card svg {
+    margin-bottom: 32px;
+  }
+  .advantage .advantage-inner .advantage-card .advantage-title {
+    font-size: 20px;
+    font-weight: 590;
+    margin-bottom: 8px;
+  }

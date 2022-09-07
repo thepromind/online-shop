@@ -52,3 +52,155 @@
     font-weight: 590;
     margin-bottom: 8px;
   }
+
+
+  .sort-filter {
+    display: flex;
+    align-items: center;
+  }
+  .sort-filter .sort-filter-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--secondary-text-color);
+  }
+
+  .card-basket {
+    background-color: var(--white-color);
+    border: 1px solid rgba(193, 200, 206, 0.3);
+    border-radius: 12px;
+  }
+  .card-basket .card-basket-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(193, 200, 206, 0.3);
+  }
+  .card-basket .card-basket-body {
+    padding: 20px 0;
+    display: grid;
+    grid-gap: 16px;
+  }
+
+  .basket-list {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+  }
+  .basket-list .basket-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 80px;
+    border-radius: 12px;
+  }
+  .basket-list .basket-info {
+    width: calc(100% - 532px);
+  }
+  .basket-list .basket-info h4 {
+    width: 98%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+    overflow: hidden;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+  }
+  .basket-list .basket-info .info-more {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 16px;
+    color: var(--secondary-text-color);
+  }
+  .basket-list .basket-info .info-more > div > span {
+    margin-right: 2px;
+  }
+  .basket-list .basket-info .basket-actions {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+  }
+
+  .basket-list .basket-price {
+    max-width: 220px;
+    width: 100%;
+  }
+  .basket-list .basket-price .info-more {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--secondary-text-color);
+  }
+  .basket-list .basket-price .info-more .sale-price {
+    text-decoration-line: line-through;
+    font-weight: 500;
+  }
+  .basket-list .basket-price h4 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: var(--primary-text-color);
+    margin-bottom: 4px;
+  }
+
+  .card-final-price {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 12px rgba(144, 152, 177, 0.25);
+    border-radius: 12px;
+    padding: 25px 20px;
+    display: grid;
+    grid-gap: 24px;
+    position: sticky;
+    top: 16px;
+  }
+  .card-final-price .final-price-num {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-final-price .final-price-num span {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #444444;
+  }
+  .card-final-price .final-detail {
+    display: grid;
+    grid-gap: 12px;
+  }
+  .card-final-price .final-detail .final-detail-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: var(--secondary-text-color);
+  }
+  .card-final-price .final-detail .final-detail-row .detail-row-main {
+    color: var(--primary-text-color);
+    text-align: right;
+  }
+
+  .form-delivery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px 24px;
+  }

@@ -22,6 +22,7 @@ return (
                     <a href="#" className="logotype mr-16">LOGO</a>
                     <Button 
                         text={'Каталог'}
+                        size={"24"}
                         className={'btn btn-primary'}
                         icon={'/icons/sr-bulletlist.svg#root'}
                         event={() => setIsOpenSideBar(true)}

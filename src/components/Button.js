@@ -2,12 +2,12 @@ import React from "react";
 
 
 
-function Button({text, className = null, icon = null, event = null}) {
+function Button({text, className = null, icon = null, event = null, size = null}) {
 
     const renderSVG = (icon) => {
         if(icon) {
             return (
-                <svg height="24" width="24">
+                <svg height={size} width={size}>
                     <use href={icon}></use>
                 </svg>
             )

@@ -3,8 +3,10 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import Card from '../components/Card';
 import MainTitle from '../Typography/MainTitle';
 import Title15 from '../Typography/Title15';
-import CardCategory from '../components/CardCategory';
-import SideCats from '../components/SideCats';
+import ChooseTab from '../components/ChooseTab';
+import Checkbox from '../components/Checkbox';
+import FilterPrice from '../components/FilterPrice';
+import Button from '../components/Button';
 import Accordion from '../components/Accordion';
 
 
@@ -50,22 +52,28 @@ return (
 
                 <div className="col-md-2">
                     <Title15 className="mb-12" text={'Категории'}/>
-                    <Accordion/>
+                    <div className="grid-list-8 mb-16">
+                        <Checkbox label={"Туфли"} nameID={"cat-1"}/>
+                        <Checkbox label={"Лоферы"} nameID={"cat-2"}/>
+                        <Checkbox label={"Кроссы"} nameID={"cat-3"}/>
+                        <Checkbox label={"Макасины"} nameID={"cat-4"}/>
+                    </div>
+                    <Title15 className="mb-12" text={'Цена'}/>
+                    <FilterPrice className={"mb-12"} />
+                    <Button 
+                        text={'Применить'}
+                        className={'btn btn-primary btn-dark btn-28 w-100'}
+                    />
                 </div>
                 <div className="col-md-10">
-                    <div className="grid-max mb-40">
-                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
-                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
-                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
-                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
-                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
-                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
-                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
-                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
-                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
-                        <CardCategory text={"Кофта"} backgroundImage={'url(../images/products/product-1.png'} />
+                    <div className="sort-filter gg-16 mb-24">
+                        <span className="sort-filter-text">Сортировать по:</span>
+                        <div className="choose-tab">
+                            <ChooseTab tab={"Популярности"} className="active" />
+                            <ChooseTab tab={"Рейтингу"} className="" />
+                            <ChooseTab tab={"Обновлению"} className="" />
+                        </div>
                     </div>
-                    <MainTitle className="mb-16" text={'Одежда'}/>
                     <div className="grid-max">
                         <Card 
                             backgroundImage={'url(../images/products/product-1.png'}
@@ -88,24 +96,42 @@ return (
                             name={'Dates Box'}
                             type={'Футболки'}
                             price={'6 790'}
-                            percent={'25%'}
-                            priceWithoutPercent={'4 490'}
                         />
                         <Card 
                             backgroundImage={'url(../images/products/product-1.png'}
                             name={'Dates Box'}
                             type={'Футболки'}
                             price={'6 790'}
-                            percent={'25%'}
-                            priceWithoutPercent={'4 490'}
                         />
                         <Card 
                             backgroundImage={'url(../images/products/product-1.png'}
                             name={'Dates Box'}
                             type={'Футболки'}
                             price={'6 790'}
-                            percent={'25%'}
-                            priceWithoutPercent={'4 490'}
+                        />
+                        <Card 
+                            backgroundImage={'url(../images/products/product-1.png'}
+                            name={'Dates Box'}
+                            type={'Футболки'}
+                            price={'6 790'}
+                        />
+                        <Card 
+                            backgroundImage={'url(../images/products/product-1.png'}
+                            name={'Dates Box'}
+                            type={'Футболки'}
+                            price={'6 790'}
+                        />
+                        <Card 
+                            backgroundImage={'url(../images/products/product-1.png'}
+                            name={'Dates Box'}
+                            type={'Футболки'}
+                            price={'6 790'}
+                        />
+                        <Card 
+                            backgroundImage={'url(../images/products/product-1.png'}
+                            name={'Dates Box'}
+                            type={'Футболки'}
+                            price={'6 790'}
                         />
                     </div>
                 </div>

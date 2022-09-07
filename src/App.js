@@ -7,6 +7,7 @@ import ProductInner from './pages/ProductInner';
 import CatsInner from './pages/CatsInner';
 import SubCatsInner from './pages/SubCatsInner';
 import Basket from './pages/Basket';
+import Profile from './pages/Profile';
 import './design.css';
 import './style.css';
 import News from './pages/News';
@@ -20,7 +21,10 @@ function App() {
       {/* <ProductInner/> */}
       {/* <CatsInner/> */}
       {/* <SubCatsInner/> */}
-      <Basket/>
+
+      {/* <News/> */}
+      {/* <Basket/> */}
+      <Profile />
       
       <Footer/>
     </div>

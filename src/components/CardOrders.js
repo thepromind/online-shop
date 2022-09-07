@@ -2,22 +2,17 @@ import React from "react";
 
 
 
-function Card({backgroundImage, name, type, price, priceWithoutPercent = null, percent = null, favorite = null, hearth}) {
+function CardOrders({backgroundImage, name, type, price, priceWithoutPercent = null, percent = null, statusBadge = null}) {
 return (
-    <div className={`card ${favorite}`}>
+    <div className="card">
         <div className="image-card">
             <div className="img" style={{ backgroundImage: `${backgroundImage}` }}></div>
             <div className="actions">
                 <div className="sale-info">
 
                     {/* Если нету скидки то тогда просто целый див не показывать то что снизу */}
-                    {percent ? <div className="sale l-hot">{percent}</div> : null}
+                    {percent ? <div  className={`sale ${statusBadge}`}>{percent}</div> : null}
 
-                </div>
-                <div className="favorite">
-                    <svg height="24" width="24">
-                        <use href={`/icons/sr-${hearth}.svg#root`}></use>
-                    </svg>
                 </div>
             </div>
         </div>
@@ -26,7 +21,7 @@ return (
                 <h3>{name}</h3>
                 <p>{type}</p>
             </div>
-            <div className="price">
+            <div className="price mb-16">
                 {
                     priceWithoutPercent
                         ? <>
@@ -36,9 +31,19 @@ return (
                         : <span className='primary-price'>{price} ₸</span>
                 }
             </div>
+            <div className="about-delivery">
+                <div className="about-delivery-left">
+                    <span className="title">Заказан</span>
+                    <span className="info">10 января</span>
+                </div>
+                <div className="about-delivery-right">
+                    <span className="title">Получен</span>
+                    <span className="info">24 января</span>
+                </div>
+            </div>
         </div>
     </div>
 );
 }
 
-export default Card;
+export default CardOrders;

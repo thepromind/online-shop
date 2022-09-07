@@ -5,6 +5,7 @@
     --orange-color: #E75F2A;
     --yellow-color: #EFAA3F;
     --danger-color: #FF3A44;
+    --green-color: #2DA771;
 
     --primary-text-color: #444444;
     --secondary-text-color: #9098B1;
@@ -739,6 +740,9 @@ p {
 .danger-color {
   color: var(--danger-color)
 }
+.green-color {
+  color: var(--green-color)
+}
 
 /* Inputs */
 .input-group {
@@ -857,11 +861,11 @@ p {
 /* Grid columns */
 .grid-max {
   display: grid;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-template-columns: repeat(auto-fill, 255px);
 }
 .grid-list-8 {
   display: grid;
@@ -923,6 +927,8 @@ p {
 .l-hot { background-color: var(--yellow-color); }
 .m-hot { background-color: var(--orange-color); }
 .h-hot {  }
+.deleviry-badge { background-color: var(--green-color); }
+
 
 /* Lines */
 .line-16 {
@@ -979,9 +985,37 @@ p {
 .choose-tab .tab-select.active {
   background: rgba(64, 191, 255, 0.3);
 }
+
+/* Tab Link */
+.tab-list {
+  display: grid;
+}
+.tab-list .tab-link {
+  background-color: var(--white-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: #444444;
+  grid-gap: 8px;
+  transition: .3s;
+  cursor: pointer;
+}
+.tab-list .tab-link:hover {
+  opacity: var(--opacity-all);
+}
+.tab-list .tab-link.active {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
 /* Card */
 .card {
     display: grid;
+    width: 100%;
     background-color: transparent;
     border-radius: 12px;
     overflow: hidden;
@@ -1052,6 +1086,9 @@ p {
 .card:hover .image-card .actions .favorite {
     opacity: 1;
 }
+.card.show .image-card .actions .favorite {
+  opacity: 1;
+}
 .text-card {
     padding: 16px;
 }
@@ -1094,6 +1131,48 @@ p {
     text-decoration-line: line-through;
     color: #9098B1;
 }
+
+/* Card Orders Profile */
+.image-card .actions .sale {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.about-delivery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  visibility: hidden;
+  height: 0px;
+  opacity: 0;
+  transition: .3s;
+}
+.card:hover .about-delivery  {
+  visibility: visible;
+  transition: .3s;
+  opacity: 1;
+  height: 48px;
+}
+.about-delivery .about-delivery-left .title, .about-delivery .about-delivery-right .title {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: var(--secondary-text-color);
+  margin-bottom: 2px;
+  display: block;
+}
+.about-delivery .about-delivery-left .info, .about-delivery .about-delivery-right .info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--secondary-text-color);
+  display: block;
+}
+/* .about-delivery .about-delivery-right .green-color {
+  color: var(--green-color);
+} */
 
 /* Card PRICE */
 .card-price {

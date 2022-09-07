@@ -8,17 +8,16 @@ import CatsInner from './pages/CatsInner';
 import SubCatsInner from './pages/SubCatsInner';
 import './design.css';
 import './style.css';
+import News from './pages/News';
 
 function App() {
   return (
     <div className="App">
       <Nav/>
       <Header/>
-      {/* <Main/> */}
-      {/* <ProductInner/> */}
-      {/* <CatsInner/> */}
-      <SubCatsInner/>
-      
+      <News/>
+      {/* <Main/>
+      <ProductInner/> */}
       <Footer/>
     </div>
   );

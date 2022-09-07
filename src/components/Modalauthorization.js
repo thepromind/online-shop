@@ -41,14 +41,14 @@ const Modalauthorization = ({isOpenModalAutorization, setIsOpenModalAutorization
 	const toggleModalWindow = () => {
 		if(isSendMail) {
 			return <>
-				<MainTitle text={'LOGO'} className={"modal-logo black mb-32"}/>
+				<MainTitle text={'LOGO'} className={"font-size-33 black mb-32"}/>
 				<MainTitle text={'Проверьте почту'} className={'black mb-8'}/>
 				<SubTitle text={'Мы отправили код на ваш почтовый адрес. Пожалуйста подтвердите ваш электронный адрес.'} className={'mb-16'}/>
 				<Button text={'Понятно'} className={'btn btn-primary w-100'} event={()=>endAutorization()} />
 			</>
 		} else {
 			return <>
-				<MainTitle text={'LOGO'} className={"modal-logo black mb-32"}/>
+				<MainTitle text={'LOGO'} className={"font-size-33 black mb-32"}/>
 				<MainTitle text={'Войдите по почте'} className={'black mb-8'}/>
 				<SubTitle text={'Мы отправим код на ваш почтовый адрес.'} className={'mb-16'}/>
 				<form onSubmit={(e) => onSubmit(e)}>

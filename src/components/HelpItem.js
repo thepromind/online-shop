@@ -10,7 +10,7 @@ const HelpItem = ({title, text}) => {
 					<h2 className={isOpen ? 'mb-24' : ''} >
 						{title}
 					</h2>
-					<p className={isOpen ? 'open-help-item' : 'close-help-item'} style={{display: `${isOpen ? '' : 'none'}`}}>
+					<p className={isOpen ? 'hidden active' : 'hidden'} style={{display: `${isOpen ? '' : 'none'}`}}>
 						{text}
 					</p>
 				</div>

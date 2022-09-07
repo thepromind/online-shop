@@ -1558,6 +1558,9 @@ footer .logo-container span, footer ul li {
   padding: 0;
   margin: 0 0 8px;
 }
+footer ul li a {
+  color: #111111;
+}
 
 /* Modal-Autorization */
 .modal {
@@ -1660,14 +1663,22 @@ footer .logo-container span, footer ul li {
 .help-item-row p {
   color: #444444
 }
-.open-help-item {
-  height: 100%;
-  display: block;
-  transition: height .3s;
+.help-item-row .hidden{
+  width:90%;
+  padding:0;
+  margin:auto;
+  visibility: hidden;
+  height:0;
+  overflow:hidden;
+  opacity:0;
+  transition:all 0.2s linear;
 }
-.close-help-item {
-  height: 0;
-  display: none;
+.help-item-row .active{
+  padding:10px;
+  visibility: visible;
+  height:auto;
+  overflow:none;
+  opacity:1;
 }
 
 /* ------------------------ Всегда ниже всех стилей ------------------------ */

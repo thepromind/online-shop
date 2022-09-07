@@ -10,6 +10,7 @@ import Basket from './pages/Basket';
 import './design.css';
 import './style.css';
 import News from './pages/News';
+import Help from './pages/Help';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <ProductInner/> */}
       {/* <CatsInner/> */}
       {/* <SubCatsInner/> */}
-      <Basket/>
+      {/* <Basket/> */}
+      <Help/>
       
       <Footer/>
     </div>

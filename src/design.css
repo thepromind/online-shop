@@ -1619,7 +1619,7 @@ footer .logo-container span, footer ul li {
 }
 
 /* News */
-.news .news-title {
+.news .news-title, .help .help-title {
   text-align: center;
   color: #444444;
 }
@@ -1643,6 +1643,31 @@ footer .logo-container span, footer ul li {
 .underline {
   font-weight: 600;
   text-decoration-line: underline;
+}
+
+/* Help */
+.help-item-row {
+  border-top: 1px solid rgba(200, 199, 216, 0.6);
+}
+.help-item-row:last-child {
+  border-bottom: 1px solid rgba(200, 199, 216, 0.6);
+}
+.help-item-row h2 {
+  font-size: 18px;
+  color: #07080A;
+  font-weight: 400;
+}
+.help-item-row p {
+  color: #444444
+}
+.open-help-item {
+  height: 100%;
+  display: block;
+  transition: height .3s;
+}
+.close-help-item {
+  height: 0;
+  display: none;
 }
 
 /* ------------------------ Всегда ниже всех стилей ------------------------ */

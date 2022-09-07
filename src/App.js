@@ -6,6 +6,7 @@ import Main from './pages/Main';
 import ProductInner from './pages/ProductInner';
 import CatsInner from './pages/CatsInner';
 import SubCatsInner from './pages/SubCatsInner';
+import Basket from './pages/Basket';
 import './design.css';
 import './style.css';
 import News from './pages/News';
@@ -15,9 +16,12 @@ function App() {
     <div className="App">
       <Nav/>
       <Header/>
-      <News/>
-      {/* <Main/>
-      <ProductInner/> */}
+      {/* <Main/> */}
+      {/* <ProductInner/> */}
+      {/* <CatsInner/> */}
+      {/* <SubCatsInner/> */}
+      <Basket/>
+      
       <Footer/>
     </div>
   );

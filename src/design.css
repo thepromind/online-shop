@@ -1419,11 +1419,9 @@ footer .logo-container span, footer ul li {
 /* News */
 .news .news-title {
   text-align: center;
-}
-
-.news-item {
   color: #444444;
 }
+
 .news-item .news-item-row {
   justify-content: center;
 }

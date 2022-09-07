@@ -88,7 +88,7 @@
     align-items: center;
     grid-gap: 24px;
   }
-  .basket-list .basket-img {
+  .basket-list .basket-img, .profile-name .profile-image .profile-img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -203,4 +203,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 12px 24px;
+  }
+
+  .profile-name {
+    display: grid;
+  }
+  .profile-name .profile-image {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+  }
+  .profile-name .profile-image .profile-img {
+    height: 72px;
+    width: 72px;
   }

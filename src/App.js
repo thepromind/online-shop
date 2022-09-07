@@ -6,14 +6,16 @@ import Main from './pages/Main';
 import ProductInner from './pages/ProductInner';
 import './design.css';
 import './style.css';
+import News from './pages/News';
 
 function App() {
   return (
     <div className="App">
       <Nav/>
       <Header/>
-      <Main/>
-      {/* <ProductInner/> */}
+      <News/>
+      {/* <Main/>
+      <ProductInner/> */}
       <Footer/>
     </div>
   );
